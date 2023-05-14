@@ -8,6 +8,10 @@ import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+    companion object {
+        private const val TAG = "MainActivity"
+    }
+
 //    private var btnSetValue: Button? = null
     private lateinit var btnSetValue: Button
     private lateinit var tvText: TextView
@@ -31,7 +35,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         if (v.id == R.id.btn_set_value) {
 //            tvText.text ="19"
-            Log.d("MainActivity", names.toString())
+//            Log.d("MainActivity", names.toString())
+            Log.d(TAG, "onClick: " + names.toString())
             val name = StringBuilder()
             for (i in 0..2) {
                 name.append(names[i]).append("\n")
