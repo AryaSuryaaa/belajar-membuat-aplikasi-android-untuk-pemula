@@ -29,6 +29,7 @@ class MoveWithObjectActivity : AppCompatActivity() {
                     "\nEmail : ${person.email}, " +
                     "\nAge : ${person.age}," +
                     "\nLocation : ${person.city}"
+            tvObject.text = text
         }
     }
 }
