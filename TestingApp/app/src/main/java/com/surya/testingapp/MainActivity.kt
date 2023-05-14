@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 //            tvText.text ="19"
             Log.d("MainActivity", names.toString())
             val name = StringBuilder()
-            for (i in 0..3) {
+            for (i in 0..2) {
                 name.append(names[i]).append("\n")
             }
             tvText.text = name.toString()
