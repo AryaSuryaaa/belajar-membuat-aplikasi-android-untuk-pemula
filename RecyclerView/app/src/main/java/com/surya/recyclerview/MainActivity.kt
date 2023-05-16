@@ -1,5 +1,6 @@
 package com.surya.recyclerview
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -25,6 +26,13 @@ class MainActivity : AppCompatActivity() {
         list.addAll(getListHeroes())
         showRecyclerList()
 
+//        Jika ingin membuat tampilan landsccape
+//        if (applicationContext.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+//            rvHeroes.layoutManager = GridLayoutManager(this, 2)
+//        } else {
+//            rvHeroes.layoutManager = LinearLayoutManager(this)
+//        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -41,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                 rvHeroes.layoutManager = GridLayoutManager(this, 2)
             }
         }
+
         return super.onOptionsItemSelected(item)
     }
 
