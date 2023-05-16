@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import org.w3c.dom.Text
 
 class ListHeroAdapter(private val listHero: ArrayList<Hero>): RecyclerView.Adapter<ListHeroAdapter.LisViewHolder>() {
@@ -24,7 +25,10 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>): RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: LisViewHolder, position: Int) {
         val (name, description, photo) = listHero[position]
-        holder.imgPhoto.setImageResource(photo)
+//        holder.imgPhoto.setImageResource(photo)
+        Glide.with(holder.itemView.context)
+            .load(photo) //URL Gambar
+            .into(holder.imgPhoto) // imageView mana yang akan diterapkan
         holder.tvName.text = name
         holder.tvDescription.text = description
 //        Pindahkan fungsi onClick ke MainActivity
