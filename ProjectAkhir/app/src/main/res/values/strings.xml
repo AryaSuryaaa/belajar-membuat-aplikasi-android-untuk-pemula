@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">Kitsu Movie</string>
+    <string name="anime_name">Nama Anime</string>
+    <string name="description">Description</string>
+    <string name="about">About</string>
+    <string name="status_film">Status</string>
+    <string name="display_main_character">Main Character</string>
+    <string name="display_genre">Genre</string>
+    <string name="display_description">Description</string>
+
+    <string-array name="data_anime_name">
+        <item>One Piece</item>
+        <item>Naruto Shippuden</item>
+        <item>Isekai de Cheat Skill wo Te ni Shita Ore wa</item>
+        <item>Shigatsu wa Kimi no Uso</item>
+        <item>Tensei shitara Slime Datta Ken</item>
+        <item>Kimi no Na wa</item>
+        <item>Kimetsu no Yaiba</item>
+        <item>Kuroko no Basket</item>
+        <item>Isekai wa Smartphone to Tomo ni</item>
+        <item>Spy x Family</item>
+    </string-array>
+
+    <string-array name="data_anime_description">
+        <item>Bercerita tetang seorang laki-laki bernama Monkey D. Luffy,yang menentang arti dari gelar bajak laut. Daripada kesan nama besar, kejahatan, kekerasan, dia lebih terlihat seperti bajak laut rendahan yang suka bersenang-senang, alasan Luffy menjadi bajak laut adalah tekadnya untuk berpetualang di lautan yang menyenangkan dan bertemu orang-orang baru dan menarik, serta bersama mencari One Piece. Mengikuti jejak pahlawan masa kecilnya, Luffy dan krunya mengarungi Grand Line, melalui petualangan gila, misteri gelap dan memerangi musuh yang kuat, semua itu dilakukan untuk mendapatkan One Piece.</item>
+        <item>Berkisah tentang Uzumaki Naruto yang sedang berusaha menyelamatkan Uchiha Sasuke dari Orochimaru. Setelah dua setengah tahun berlatih dengan Jiraiya-sensei, akhirnya Naruto kembali ke desa Konoha. Dengan ditemani oleh ninja Konoha lainnya, dia berjanji akan membawa pulang Sasuke. Akan tetapi dalam perjalanannya mereka harus menghadapi berbagai musuh yang lebih berbahaya, yaitu anggota organisasi Akatsuki</item>
+        <item>Sebuah pintu misterius terbuka, mengundang seorang anak laki-laki yang telah diintimidasi secara brutal sepanjang hidupnya untuk mengambil langkah maju yang berani ke hal yang tidak diketahui. Di sisi lain, dia menemukan tumpukan artefak yang tak ternilai dan dunia yang penuh dengan sihir seperti monster. Pengungkapan yang paling mengejutkan, bagaimanapun, adalah bahwa dia dapat membawa apa pun yang dia inginkan kembali ketika dia kembali ke Bumi. Tidak akan lama sebelum kehidupan ganda ini mengubah dia selamanya</item>
+        <item>Kousei Arima adalah anak ajaib yang dikenal sebagai "Metronom Manusia" karena memainkan piano dengan presisi dan kesempurnaan. Dipandu oleh seorang ibu yang tegas dan pelatihan yang ketat, Kousei mendominasi setiap kompetisi yang dia ikuti, mendapatkan kekaguman dari rekan musiknya dan pujian dari penonton. Ketika ibunya tiba-tiba meninggal dunia, trauma selanjutnya membuatnya tidak bisa mendengar suara piano, dan dia tidak pernah naik panggung setelahnya.</item>
+        <item>Satoru Mikami yang berusia tiga puluh tujuh tahun adalah tipikal pekerja perusahaan, yang sangat puas dengan gaya hidupnya yang monoton di Tokyo, selain gagal mendapatkan pacar sekali pun sepanjang hidupnya. Di tengah pertemuan biasa dengan rekannya, dia menjadi korban penyerang acak di jalanan dan ditikam. Namun, saat menyerah pada luka-lukanya, sebuah suara aneh bergema di benaknya, dan melafalkan banyak perintah yang tidak dapat dipahami oleh orang yang sekarat itu.</item>
+        <item>Mitsuha Miyamizu, seorang gadis sekolah menengah, ingin menjalani kehidupan seorang anak laki-laki di kota Tokyo yang ramai — sebuah mimpi yang sangat kontras dengan kehidupannya saat ini di pedesaan. Sementara itu di kota, Taki Tachibana menjalani kehidupan yang sibuk sebagai siswa sekolah menengah sambil melakukan pekerjaan paruh waktunya dan berharap untuk masa depan dalam arsitektur.</item>
+        <item>Sejak kematian ayahnya, beban menghidupi keluarga berada di pundak Tanjirou Kamado. Meski hidup melarat di gunung terpencil, keluarga Kamado bisa menikmati kehidupan yang relatif damai dan bahagia. Suatu hari, Tanjirou memutuskan untuk pergi ke desa setempat untuk menghasilkan sedikit uang dengan menjual arang. Dalam perjalanan pulang, malam tiba, memaksa Tanjirou berlindung di rumah seorang pria aneh, yang memperingatkannya tentang keberadaan setan pemakan daging yang mengintai di hutan pada malam hari.</item>
+        <item>Selama tiga tahun terakhir, Sekolah Menengah Teikou telah mendominasi kancah bola basket nasional dengan barisan legendarisnya: "Generasi Keajaiban". Itu terdiri dari lima keajaiban yang unggul dalam olahraga, tetapi "Phantom Sixth Man" mengintai di bayang-bayang dan membantu tim mendapatkan status terhormat mereka. Akhirnya, pertumbuhan mereka yang luar biasa membuat mereka lelah dari olahraga yang mereka sukai dan membuat mereka berpisah di sekolah menengah.</item>
+        <item>Dalam kesalahan yang tidak dipikirkan, Tuhan secara tidak sengaja menjatuhkan Touya Mochizuki dengan sambaran petir! Sebagai permintaan maaf, Tuhan memberinya satu keinginan dan kesempatan untuk hidup kembali di dunia fantasi magis. Touya dengan senang hati menerima tawaran itu dan, untuk satu keinginannya, hanya meminta untuk menyimpan ponsel cerdasnya saat dia memulai perjalanannya ke dunia misterius ini.</item>
+        <item>Politisi korup, nasionalis yang hiruk pikuk, dan kekuatan penghasut perang lainnya terus-menerus membahayakan lapisan tipis perdamaian antara negara tetangga Ostania dan Westalis. Terlepas dari plot mereka, mata-mata terkenal dan ahli penyamaran "Twilight" memenuhi misi berbahaya satu demi satu dengan harapan tidak ada anak yang harus mengalami kengerian perang.</item>
+    </string-array>
+
+    <string-array name="data_anime_photo">
+        <item>https://cdn.myanimelist.net/images/anime/1770/97704.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/1565/111305.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/1316/134327.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/3/67177.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/1069/123309.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/5/87048.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/1286/99889.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/11/50453.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/7/86794.jpg</item>
+        <item>https://cdn.myanimelist.net/images/anime/1441/122795.jpg</item>
+    </string-array>
+
+
+    <string-array name="data_status_tayang">
+        <item>On Going</item>
+        <item>End</item>
+        <item>On Going</item>
+        <item>End</item>
+        <item>Batch</item>
+        <item>Movie</item>
+        <item>Waiting new Season</item>
+        <item>End</item>
+        <item>End</item>
+        <item>Waiting new Season</item>
+    </string-array>
+
+    <string-array name="data_seasons">
+        <item>20</item>
+        <item>5 Musim</item>
+        <item>1</item>
+        <item>Movie</item>
+        <item>3</item>
+        <item>Movie</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+        <item>2</item>
+
+    </string-array>
+
+    <string-array name="data_studios">
+        <item>Toei Animation</item>
+        <item>Toei Animation</item>
+        <item>Millepensee</item>
+        <item>A-1 Pictures</item>
+        <item>8bit</item>
+        <item>CoMix Wave Films</item>
+        <item>ufotable</item>
+        <item>Production I.G</item>
+        <item>Production Reed</item>
+        <item>Wit Studio, CloverWorks</item>
+    </string-array>
+
+    <string-array name="data_name_main_char_1">
+        <item>Monkey D., Luffy</item>
+        <item>Uzumaki Naruto</item>
+        <item>Tenjou, Yuuya</item>
+        <item>Miyazono, Kaori</item>
+        <item>Tempest, Rimuru</item>
+        <item>Miyamizu, Mitsuha</item>
+        <item>Kamado, Tanjirou</item>
+        <item>Kuroko, Tetsuya</item>
+        <item>Mochizuki, Touya</item>
+        <item>Forger, Anya</item>
+    </string-array>
+
+    <string-array name="data_img_main_char_1">
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/9/310307.webp?s=db910acb9ed1df816f157902546017e9</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/2/284121.webp?s=1f975cc7888471b4933c6f841648a8e4</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/7/509414.webp?s=0186190979841e20c0d5376e6a585827</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/14/269375.webp?s=e222d7a03e198d702842d443267b31be</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/4/495795.webp?s=b5c4fc5c61a6aa78a6a8c818e4afa6e4</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/5/336342.webp?s=2b00afd1c02998e0925b8d14dca0e063</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/6/386735.webp?s=65a12dd02dd5a1735d997e082cb1cfe6</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/3/258381.webp?s=e98c5b6768d11321d0b929f2dc271bb8</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/11/333325.webp?s=63012541366c2266a5c07058413fee93</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/4/457933.webp?s=c5cb7eac8057217e95fa1c6df8f7e6d1</item>
+    </string-array>
+
+    <string-array name="data_name_main_char_2">
+        <item>Roronoa, Zoro</item>
+        <item>Uchiha Sasuka</item>
+        <item>Houjo, Kaori</item>
+        <item>Arima, Kousei</item>
+        <item></item>
+        <item>Tachibana, Taki</item>
+        <item>Kamado, Nezuko</item>
+        <item>Kagami, Taiga</item>
+        <item>Urnea Belfast, Yumina</item>
+        <item>Forger, Yor</item>
+    </string-array>
+
+    <string-array name="data_img_main_char_2">
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/3/100534.webp?s=7f579318d459ec7e41783fc62d0cf1d1</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/9/131317.webp?s=f0a590a7752f7f9e1fb30e4c39992eb1</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/6/510271.webp?s=272c0cb72477fb452b12e2ee0899c9cd</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/4/273755.webp?s=94a92e16bbae91f720f64de05b0f4348</item>
+        <item></item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/6/311593.webp?s=a450f4fb76ab27e89b75d80f20cd788d</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/15/384829.webp?s=3d74bec37b724bb6758fa72f15e578b7</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/2/169361.webp?s=59309e28e642729e91fb8878ff81c180</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/16/333329.webp?s=eee463a57757947f574e8579d50d9aa0</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/11/457934.webp?s=eb0162341046688184f0b23c1a82af17</item>
+    </string-array>
+
+    <string-array name="data_name_main_char_3">
+        <item>Sanji</item>
+        <item>Haruno Sakura</item>
+        <item>Night</item>
+        <item>Sawabe, Tsubaki</item>
+        <item></item>
+        <item></item>
+        <item>Agatsuma, Zenitsu</item>
+        <item></item>
+        <item>Shileska, Linse</item>
+        <item>Forger, Loid</item>
+    </string-array>
+
+    <string-array name="data_img_main_char_3">
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/5/136769.webp?s=8d4a34e3eb4bf03752fa350dd7be5335</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/9/69275.webp?s=15326692207e460b6789bd7f7c6f388a</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/6/503700.webp?s=a131b091006e9ed6b758d88ab1a60cf7</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/11/252841.webp?s=8579f750bf1a32970074d57ff2301cab</item>
+        <item></item>
+        <item></item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/6/384253.webp?s=305d7498f707aa1e02ba748235a4b2a2</item>
+        <item></item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/15/330375.webp?s=01386203ba4c61a09c16d40992c02243</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/2/457747.webp?s=f453e2dd764f1b66ca67dc17dd4138da</item>
+    </string-array>
+
+    <string-array name="data_name_main_char_4">
+        <item>Nami</item>
+        <item>Hatake, Kakashi</item>
+        <item>Kazama, Kaede</item>
+        <item>Watari, Ryouta</item>
+        <item></item>
+        <item></item>
+        <item>Hashibira, Inosuke</item>
+        <item></item>
+        <item>Shileska, Elze</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="data_img_main_char_4">
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/2/263249.webp?s=d31a0d5581bea970d8fb845dc97a0926</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/7/284129.webp?s=51cf4d5b54e20bbcb6be84750078aeeb</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/4/510275.webp?s=3c268aadf2e6eb8be7b24437a1c61c9f</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/16/252843.webp?s=0b22dfcee06ef20f52b43e3e5af2dd5b</item>
+        <item></item>
+        <item></item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/3/329560.webp?s=8f65c00ba158c8515104fda40b1ad673</item>
+        <item></item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/9/333326.webp?s=e5d1b173eb61948574e7999bba8a751f</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="data_name_main_char_5">
+        <item>Tony Tony, Chopper</item>
+        <item>Jiraiya</item>
+        <item>Von Alceria, Lexia</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Kokonoe, Yae</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="data_img_main_char_5">
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/3/100536.webp?s=b67db9b11886e0376cb0099926c5d732</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/15/68618.webp?s=eacf8d5f881c5c4c6e1cea89ed2d46ed</item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/3/510273.webp?s=f3fd99d43dc9da20312fd51e6c2f3c66</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>https://cdn.myanimelist.net/r/42x62/images/characters/14/330377.webp?s=dd78c2ec98cd27fcd3b2f487eadf540e</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="data_genre">
+        <item>Action, Adventure, Fantasy</item>
+        <item>Action, Adventure, Fantasy</item>
+        <item>Action, Adventure, Fantasy</item>
+        <item>Drama, Romance</item>
+        <item>Action, Adventure, Comedy, Fantasy</item>
+        <item>Award Winning, Drama, Supernatural</item>
+        <item>Action, Award Winning, Fantasy</item>
+        <item>Sports</item>
+        <item>Adventure, Comedy, Fantasy, Romance</item>
+        <item>Action, Award Winning, Comedy</item>
+    </string-array>
+</resources>
