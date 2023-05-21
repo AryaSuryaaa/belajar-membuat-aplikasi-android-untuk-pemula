@@ -1,5 +1,6 @@
 package com.surya.projectakhir
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -63,10 +64,21 @@ class DetailActivity : AppCompatActivity() {
             binding.genresAnimeItemDetail.text = anime.genre
 
             binding.descriptionAnimeItemDetail.text = anime.description
-
-
         }
 
+        binding.btnShareDetail.setOnClickListener{
+
+            val shareContent = "Ayo Nonton Anime " + binding.nameItemDetail.text
+
+            val intent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/plain"
+                putExtra(Intent.EXTRA_TEXT, shareContent)
+            }
+
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(Intent.createChooser(intent, "Bagikan melalui"))
+            }
+        }
 
     }
 }

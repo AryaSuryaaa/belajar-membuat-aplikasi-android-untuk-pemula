@@ -14,6 +14,7 @@
     <string name="email">Email</string>
     <string name="instagram">Instagram</string>
     <string name="github">Github</string>
+    <string name="share">Share</string>
 
     <string-array name="data_anime_name">
         <item>One Piece</item>
