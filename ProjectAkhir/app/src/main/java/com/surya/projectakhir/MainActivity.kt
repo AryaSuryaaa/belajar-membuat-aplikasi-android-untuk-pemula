@@ -4,13 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.surya.projectakhir.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), ListAnimeAdapter.onItemClickCallbackk {
-
-
 
     private lateinit var rvAnime: RecyclerView
     private val list = ArrayList<Anime>()
@@ -55,7 +54,6 @@ class MainActivity : AppCompatActivity(), ListAnimeAdapter.onItemClickCallbackk 
         return listAnime
     }
 
-    // Menampilkan
     private fun showRecyclerList() {
         rvAnime.layoutManager = LinearLayoutManager(this)
         val listAnimeAdapter =ListAnimeAdapter(list)
@@ -65,18 +63,25 @@ class MainActivity : AppCompatActivity(), ListAnimeAdapter.onItemClickCallbackk 
 
     }
 
-    // Menu List
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
-
-
     override fun onItemClicked(data: Anime) {
         val intent = Intent(this, DetailActivity::class.java)
         intent.putExtra(DetailActivity.EXTRA_ANIME, data)
         startActivity(intent)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.about_page -> {
+                val intent = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(intent)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }
