@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ListSushiAdapter(private val listSushi: AbstractList<Sushis>) : RecyclerView.Adapter<ListSushiAdapter.ListViewHolder>() {
+class ListSushiAdapter(private val listSushi: ArrayList<Sushis>) : RecyclerView.Adapter<ListSushiAdapter.ListViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.menu_item, parent, false)
