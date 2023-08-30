@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">SushiFushion</string>
+
+    <string-array name="data_name">
+        <item>Sashimi</item>
+        <item>Norimaki</item>
+        <item>Nagiri Sushi</item>
+        <item>Inarizushi</item>
+        <item>Chirasi</item>
+        <item>Gunkan</item>
+    </string-array>
+
+    <string-array name="data_price">
+        <item>Rp 40.000</item>
+        <item>Rp 27.000</item>
+        <item>Rp 23.000</item>
+        <item>Rp 15.000</item>
+        <item>Rp 20.000</item>
+        <item>Rp 20.000</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>@drawable/pic8</item>
+        <item>@drawable/pic3</item>
+        <item>@drawable/pic4</item>
+        <item>@drawable/pic5</item>
+        <item>@drawable/pic6</item>
+        <item>@drawable/pic7</item>
+    </string-array>
 </resources>
