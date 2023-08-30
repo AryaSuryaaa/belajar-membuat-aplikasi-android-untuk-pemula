@@ -40,6 +40,5 @@ class ListAnimeAdapter(private val listAnime: ArrayList<Anime>) : RecyclerView.A
 
     interface onItemClickCallbackk {
         fun onItemClicked(data: Anime)
-
     }
 }

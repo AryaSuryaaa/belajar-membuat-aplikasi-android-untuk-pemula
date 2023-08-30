@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "118380217562",
+    "project_id": "kitsumovie",
+    "storage_bucket": "kitsumovie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118380217562:android:69360cd4616858cab051e3",
+        "android_client_info": {
+          "package_name": "com.surya.projectakhir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118380217562-4qjpi3342ls9fkls3r308v4ne5o76bnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.surya.projectakhir",
+            "certificate_hash": "edb7cc53b8b9f5174d50d5cdd8fd1fee900f28d1"
+          }
+        },
+        {
+          "client_id": "118380217562-1en2q0b3jiq1655b1cl95lh1tlma4l6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR_JOSJ7uMSUkaSwx14omWeLrhaRT7iT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118380217562-1en2q0b3jiq1655b1cl95lh1tlma4l6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
