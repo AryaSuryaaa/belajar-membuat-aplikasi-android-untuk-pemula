@@ -5,7 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Sushis(
-    val nam: String,
+    val name: String,
     val price: String,
     val photo: Int
 ) : Parcelable

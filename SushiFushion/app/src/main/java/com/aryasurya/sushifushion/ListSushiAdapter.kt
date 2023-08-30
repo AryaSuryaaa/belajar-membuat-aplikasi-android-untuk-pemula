@@ -5,9 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class ListSushiAdapter(private val listSushi: ArrayList<Sushis>) : RecyclerView.Adapter<ListSushiAdapter.ListViewHolder>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.menu_item, parent, false)
@@ -19,6 +21,10 @@ class ListSushiAdapter(private val listSushi: ArrayList<Sushis>) : RecyclerView.
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvPrice.text = price
+
+        holder.itemView.setOnClickListener {
+            Toast.makeText(holder.itemView.context, "Kamu memilih " + listSushi[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun getItemCount(): Int = listSushi.size
