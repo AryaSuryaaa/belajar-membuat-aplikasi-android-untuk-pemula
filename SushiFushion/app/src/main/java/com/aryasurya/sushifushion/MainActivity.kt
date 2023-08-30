@@ -1,15 +1,16 @@
 package com.aryasurya.sushifushion
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var rvSushis: RecyclerView
     private val list = ArrayList<Sushis>()
+    private lateinit var listSushiAdapter: ListSushiAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,5 +38,14 @@ class MainActivity : AppCompatActivity() {
         rvSushis.layoutManager = GridLayoutManager(this, 2)
         val listSushiAdapter = ListSushiAdapter(list)
         rvSushis.adapter = listSushiAdapter
+
+        listSushiAdapter.setOnItemClickCallback(object : ListSushiAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Sushis) {
+                val intentToDetail = Intent(this@MainActivity, DetailActivity::class.java)
+                intentToDetail.putExtra("DATA", data)
+                startActivity(intentToDetail)
+            }
+        })
     }
+
 }
