@@ -1,9 +1,347 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_detail_sushi"
+            android:layout_width="0dp"
+            android:layout_height="287dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@tools:sample/avatars"/>
+
+        <ImageView
+            android:id="@+id/img_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_detail"
+            app:layout_constraintEnd_toStartOf="@id/tv_detail"
+            app:layout_constraintBottom_toBottomOf="@id/tv_detail"/>
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="21sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_arrow_back"
+            app:layout_constraintEnd_toStartOf="@id/img_favorite"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            />
+
+        <ImageView
+            android:id="@+id/img_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_favorite_24"
+            android:layout_marginRight="16dp"
+            app:layout_constraintStart_toEndOf="@id/tv_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_detail"
+            app:layout_constraintBottom_toBottomOf="@id/tv_detail"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+        <TextView
+            android:id="@+id/tv_detail_sushi_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/img_detail_sushi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/img_star"
+            tools:text="Nama Sushi"/>
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/baseline_star_24"
+            app:layout_constraintStart_toEndOf="@id/tv_detail_sushi_name"
+            app:layout_constraintTop_toTopOf="@id/tv_detail_sushi_name"
+            app:layout_constraintBottom_toBottomOf="@id/tv_detail_sushi_name"
+            app:layout_constraintEnd_toStartOf="@id/tv_rating_sushi"/>
+
+        <TextView
+            android:id="@+id/tv_rating_sushi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintTop_toTopOf="@id/tv_detail_sushi_name"
+            app:layout_constraintBottom_toBottomOf="@id/tv_detail_sushi_name"
+            app:layout_constraintStart_toEndOf="@id/img_star"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="4.8"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_get_foods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_detail_sushi_name"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_sushi_name"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_price_detail_sushi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="?android:attr/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/rv_get_foods"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_sushi_name"
+            app:layout_constraintEnd_toStartOf="@id/ly_total_shop"
+            tools:text="Rp 23.000"/>
+
+        <LinearLayout
+            android:id="@+id/ly_total_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@id/tv_price_detail_sushi"
+            app:layout_constraintStart_toEndOf="@id/tv_price_detail_sushi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tv_price_detail_sushi"
+            android:gravity="center_vertical"
+            android:background="@drawable/layout_rounded"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_horizontal_rule_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginHorizontal="16dp"
+                android:textSize="21sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_about_sushi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tentang Sushi"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/ly_total_shop"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_sushi_name"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_description_sushi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_about_sushi"
+            app:layout_constraintStart_toStartOf="@id/tv_about_sushi"
+            app:layout_constraintEnd_toEndOf="@id/ly_total_shop"
+            tools:text="description"/>
+
+        <TextView
+            android:id="@+id/tv_sauce_sushi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Ganti Saus Sushi"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_description_sushi"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_sushi_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_description_sushi" />
+
+        <Button
+            android:id="@+id/outlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Shoyu Sauce"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/outlinedButton2"
+            app:layout_constraintStart_toStartOf="@id/tv_sauce_sushi"
+            app:layout_constraintTop_toBottomOf="@id/tv_sauce_sushi" />
+
+        <Button
+            android:id="@+id/outlinedButton2"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Metsuyu Sauce"
+            app:layout_constraintEnd_toEndOf="@+id/tv_sauce_sushi"
+            app:layout_constraintStart_toEndOf="@id/outlinedButton"
+            app:layout_constraintTop_toBottomOf="@id/tv_sauce_sushi" />
+
+        <Button
+            android:id="@+id/outlinedButton3"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ponzu Sauce"
+            app:layout_constraintEnd_toEndOf="@+id/outlinedButton"
+            app:layout_constraintStart_toStartOf="@+id/outlinedButton"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton" />
+
+        <Button
+            android:id="@+id/outlinedButton4"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Katsu Sauce"
+            app:layout_constraintEnd_toEndOf="@+id/outlinedButton2"
+            app:layout_constraintStart_toStartOf="@+id/outlinedButton2"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton2" />
+
+        <TextView
+            android:id="@+id/tv_topping_sushi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tambah Topping"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_description_sushi"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_sushi_name"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton3" />
+
+        <Button
+            android:id="@+id/outlinedButton5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="Mango"
+            app:layout_constraintEnd_toStartOf="@+id/outlinedButton6"
+            app:layout_constraintStart_toStartOf="@+id/tv_topping_sushi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_topping_sushi" />
+
+        <Button
+            android:id="@+id/outlinedButton6"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cream Cheese"
+            app:layout_constraintEnd_toEndOf="@+id/tv_topping_sushi"
+            app:layout_constraintStart_toEndOf="@+id/outlinedButton5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_topping_sushi" />
+
+        <Button
+            android:id="@+id/outlinedButton7"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tobiko"
+            app:layout_constraintEnd_toEndOf="@+id/outlinedButton5"
+            app:layout_constraintStart_toStartOf="@+id/outlinedButton5"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton5" />
+
+        <Button
+            android:id="@+id/outlinedButton8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mayonnaise"
+            app:layout_constraintEnd_toEndOf="@+id/outlinedButton6"
+            app:layout_constraintStart_toStartOf="@+id/outlinedButton6"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton6" />
+
+        <Button
+            android:id="@+id/outlinedButton9"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sesame Seeds"
+            app:layout_constraintEnd_toEndOf="@+id/outlinedButton5"
+            app:layout_constraintStart_toStartOf="@+id/outlinedButton5"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton7" />
+
+        <Button
+            android:id="@+id/outlinedButton10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cucumber"
+            app:layout_constraintEnd_toEndOf="@+id/outlinedButton6"
+            app:layout_constraintStart_toStartOf="@+id/outlinedButton6"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedButton8" />
+
+        <ImageView
+            android:id="@+id/just_line"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/textColorTertiary"
+            app:layout_constraintTop_toBottomOf="@id/outlinedButton10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Catatan Sushi"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_description_sushi"
+            app:layout_constraintStart_toStartOf="@id/tv_detail_sushi_name"
+            app:layout_constraintTop_toBottomOf="@id/just_line" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Catat disini"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_note">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/textField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Tambah ke Keranjang"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

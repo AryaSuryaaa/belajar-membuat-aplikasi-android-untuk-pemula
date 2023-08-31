@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    
     <ImageView
         android:id="@+id/banner_photo"
         android:layout_width="0dp"
@@ -62,6 +61,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
         app:layout_constraintTop_toBottomOf="@id/tv_wanna_sushi"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

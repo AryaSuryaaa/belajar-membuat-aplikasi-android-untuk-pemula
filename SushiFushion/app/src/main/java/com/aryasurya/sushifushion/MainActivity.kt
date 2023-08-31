@@ -4,11 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var rvSushis: RecyclerView
+    private lateinit var rvSushis2: RecyclerView
     private val list = ArrayList<Sushis>()
     private lateinit var listSushiAdapter: ListSushiAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         rvSushis = findViewById(R.id.rv_sushis)
         rvSushis.setHasFixedSize(true)
+
+        rvSushis2 = findViewById(R.id.rv_sushi_today)
+        rvSushis2.setHasFixedSize(true)
 
         list.addAll(getListSushi())
         showRecyclerList()
@@ -38,6 +43,12 @@ class MainActivity : AppCompatActivity() {
         rvSushis.layoutManager = GridLayoutManager(this, 2)
         val listSushiAdapter = ListSushiAdapter(list)
         rvSushis.adapter = listSushiAdapter
+
+        rvSushis2.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        val listSushiAdapter2 = ListSushiTodayAdapter(list)
+        rvSushis2.adapter = listSushiAdapter2
+
+
 
         listSushiAdapter.setOnItemClickCallback(object : ListSushiAdapter.OnItemClickCallback {
             override fun onItemClicked(data: Sushis) {
