@@ -19,6 +19,7 @@
     <string name="sesame_seeds">Sesame Seeds</string>
     <string name="cucumber">Cucumber</string>
     <string name="catatan_pembelian">Catatan pembelian</string>
+    <string name="sushi_fushion">Sushi Fushion</string>
 
     <string-array name="data_name">
         <item>Sashimi</item>
