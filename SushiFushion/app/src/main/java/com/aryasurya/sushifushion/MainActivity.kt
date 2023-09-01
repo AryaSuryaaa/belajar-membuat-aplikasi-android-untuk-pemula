@@ -6,8 +6,11 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.aryasurya.sushifushion.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
 
     private lateinit var rvSushis: RecyclerView
     private lateinit var rvSushis2: RecyclerView
@@ -15,12 +18,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var listSushiAdapter: ListSushiAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        rvSushis = findViewById(R.id.rv_sushis)
+        rvSushis = binding.rvSushis
         rvSushis.setHasFixedSize(true)
 
-        rvSushis2 = findViewById(R.id.rv_sushi_today)
+        rvSushis2 = binding.rvSushiToday
         rvSushis2.setHasFixedSize(true)
 
         list.addAll(getListSushi())

@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.aryasurya.sushifushion.databinding.MenuItemBinding
 
 class ListSushiAdapter(private val listSushi: ArrayList<Sushis>) : RecyclerView.Adapter<ListSushiAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback
@@ -19,15 +20,19 @@ class ListSushiAdapter(private val listSushi: ArrayList<Sushis>) : RecyclerView.
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.menu_item, parent, false)
-        return ListViewHolder(view)
+//        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.menu_item, parent, false)
+        val binding = MenuItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ListViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val (name, price, photo) = listSushi[position]
-        holder.imgPhoto.setImageResource(photo)
-        holder.tvName.text = name
-        holder.tvPrice.text = price
+        holder.binding.imgItemPhoto.setImageResource(photo)
+        holder.binding.tvItemName.text = name
+        holder.binding.tvItemPrice.text = price
+//        holder.imgPhoto.setImageResource(photo)
+//        holder.tvName.text = name
+//        holder.tvPrice.text = price
 
 //        holder.itemView.setOnClickListener {
 //            Toast.makeText(holder.itemView.context, "Kamu memilih " + listSushi[holder.adapterPosition].name, Toast.LENGTH_SHORT).show()
@@ -39,9 +44,5 @@ class ListSushiAdapter(private val listSushi: ArrayList<Sushis>) : RecyclerView.
 
     override fun getItemCount(): Int = listSushi.size
 
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
-        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        val tvPrice: TextView = itemView.findViewById(R.id.tv_item_price)
-    }
+    class ListViewHolder(var binding: MenuItemBinding) : RecyclerView.ViewHolder(binding.root)
 }
