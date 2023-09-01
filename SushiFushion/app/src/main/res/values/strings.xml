@@ -28,6 +28,10 @@
         <item>Inarizushi</item>
         <item>Chirasi</item>
         <item>Gunkan</item>
+        <item>Uramaki</item>
+        <item>Futomaki</item>
+        <item>Hosomaki</item>
+        <item>Temaki</item>
     </string-array>
 
     <string-array name="data_price">
@@ -37,20 +41,39 @@
         <item>Rp 15.000</item>
         <item>Rp 20.000</item>
         <item>Rp 20.000</item>
+        <item>Rp 29.000</item>
+        <item>Rp 23.000</item>
+        <item>Rp 25.000</item>
+        <item>Rp 50.000</item>
     </string-array>
 
     <string-array name="data_photo">
-        <item>@drawable/pic8</item>
-        <item>@drawable/pic3</item>
-        <item>@drawable/pic4</item>
-        <item>@drawable/pic5</item>
-        <item>@drawable/pic6</item>
-        <item>@drawable/pic7</item>
+<!--        <item>@drawable/pic8</item>-->
+<!--        <item>@drawable/pic3</item>-->
+<!--        <item>@drawable/pic4</item>-->
+<!--        <item>@drawable/pic5</item>-->
+<!--        <item>@drawable/pic6</item>-->
+<!--        <item>@drawable/pic7</item>-->
+
+        <item>https://lh3.googleusercontent.com/iUXLKrML58KJHRoV6jz8M-TqfnMpo9kwjqc7uxdZtHdKuEzFZViezYHFW-VrH_4pvpVK_O9gYf32hfZRY8yYpG0unZmh7d2qJqv78hNLYTqf_gpxqZdSNRIcEwRWLswr5zjOgXYyNY3VuCGqWFksesQwxBYvZ51WwTQQxICiDw_-LzPqQujoMd9BLaA</item>
+        <item>https://lh5.googleusercontent.com/5VQaj4zWVnrACbuTcDr1UchSGwvtTAkaVUaF22sGnjpOtXgYtCRqKQ1PT6s754M4Z8bAVx6PFN4UlYBVfTQaDt9w2VkCrz-qt_01XLaMctLay4rOz7Q96LsWAsFNnOEQP2xTs6fy5bL9BShS6RjIWDwntHBqrggpFIu9Wj5C1I-pNoNdw0J4pJnSKWA</item>
+        <item>https://lh4.googleusercontent.com/t2hOmmrbfcVcaVPHcoMA7GNSEZAHqP1S_4NsGoirEp40qccEdwu3QXbBvq-Zj4gqr1bvq9UwQAWqgT3UYg6xzm-CD20vk3YgXiiMLm4JYESIZ-v69rKK64wV2wbWZ6DPXwrmBE8f3Dv9ZWIO_q78hT6nSwX75DKnj3_c7GW0kON-RD5R-zlkH04lvEI</item>
+        <item>https://lh4.googleusercontent.com/oGc0tIw9Td5yS1Lii1nBp_IMy44qyWcSY5fWDjCELBQ0Syp1Yip9cLBnG6zYJrhwOXBUQ2_Sjxdyx149ijRerKiObQ_ciCHmfuftUqj_-us7LXOCf8MsBmuCXSY17JY2ARHjWF061QyiVEiuUHNtywer5wwpzmGDo4O3X8mSGhj2BuDqIGfuR9S1ipI</item>
+        <item>https://lh3.googleusercontent.com/oNxPSGCybIl4lFW4U_fBuDY_9GJwQdwQPtRwyF2O0orgsAbIrN0j-avUgjOgY7eKtyQ8s-DSBlmkZgxW9M8WODNs33lVpYSYxJO-SDGx8rbWc5q5mQNsowPsM-oYofv2abzaq78JKWRRo2PfIY4wsyMZOs-CPXcW0jyjfX_iCQY4hZUXlSdQ5Kg_Y1o</item>
+        <item>https://lh6.googleusercontent.com/JW8OVqrSuKBFLKc1_YyX305MWfz9uMNODDA7m7dP0LYd6vSrfzfz5IPUrc5MgczMbZtk57y0Yhe4SliYq5Wxng9y-Ep8lYNPpd-CDTUPp7sLLXJm_L6Pr-4IvBHlIJY6Rm2ah34IQ9iV6ynNOVReAAqHCtdGnZcXcT1Hkd5O62dDlK2MtmoHVh6URI0</item>
+        <item>https://lh5.googleusercontent.com/dZtWsLqOTZQtF186C_Vu6p8U3Uru67MN9m78eyskSLtZd2yVkT76-tj_wFwNtJKZbxdF2NG4mac7ceFHM98ktS7erSLQBuvH_CtExJe3JNzMnm7n1mChg1QYnnZqIovPXqdkEBe5WhdrhoCzYw26vHxvdbasLoPG1itXsA-_qPZbww8n9Ixp13wnSOo</item>
+        <item>https://lh3.googleusercontent.com/QWrDrfQdwOcJK8myS83Fi55M1XtMYL5HOhW94SHSBtWgN8dqnPAXB6oUSKUM87FX8IJIulww26dmIH4hZJXr1mg81guwHmcMxc4uNrUSgaqnivYg8lxX2OpjcVseCjO-FGRhYGNCODYU2z_onxUAQBBexFLvdAnlnKwzquWftIgixKHcEP7tsxOfD80</item>
+        <item>https://lh3.googleusercontent.com/G523LJ207XEVTVt8Aeeu90P2hbMICnY8tk19wbzy2Zh55pSQS7jgQlVS4VHwLNzz8Qj_wN5DXzI-yIKxzwWZbR5LIk-_mcmbYiG0kqabIG-pRfOG_V0AwITTRICgBq75XV39SPIAMLDwGT44BfZO4ljExeivx4TNUmb_E8pVGmIeHzokfJiUQeSvGcY</item>
+        <item>https://lh5.googleusercontent.com/ikB52nk6V_nKImku_AdK1usThTf0x6wyZDa82LgX5IIAQjis93-vhXBwqu40ICSlHM3JFDN1qUhi11rGVDTWUtYAWlKCSdJCYzKYFzqNKr91le1bfJFjR6Xtyj3g4pOj5XLYoD1kkZjTvp4HsqyO0cIVmtgn_nHhSzaBEYGLV_VWiavtkGRKlqWbWmQ</item>
     </string-array>
 
     <string-array name="data_deskripsi">
         <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam tellus vel tincidunt suscipit.</item>
         <item>Sed tincidunt dui in ante convallis, non fringilla nisi iaculis. Fusce ut est at elit scelerisque tristique.</item>
+        <item>Nullam nec justo eu orci rhoncus scelerisque. Ut eget libero nec est vestibulum luctus.</item>
+        <item>Vivamus nec nulla sit amet erat dictum facilisis. Curabitur tincidunt quam in dui cursus, a fermentum sapien ultrices.</item>
+        <item>Phasellus malesuada enim id lorem aliquam venenatis. Sed pellentesque libero non nisl vestibulum, a ultricies justo consequat.</item>
+        <item>Nulla tincidunt orci id augue suscipit, in semper leo bibendum. Aenean et bibendum sapien, at rhoncus velit.</item>
         <item>Nullam nec justo eu orci rhoncus scelerisque. Ut eget libero nec est vestibulum luctus.</item>
         <item>Vivamus nec nulla sit amet erat dictum facilisis. Curabitur tincidunt quam in dui cursus, a fermentum sapien ultrices.</item>
         <item>Phasellus malesuada enim id lorem aliquam venenatis. Sed pellentesque libero non nisl vestibulum, a ultricies justo consequat.</item>

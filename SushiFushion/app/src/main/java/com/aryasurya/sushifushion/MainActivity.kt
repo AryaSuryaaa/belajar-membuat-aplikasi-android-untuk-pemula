@@ -34,11 +34,11 @@ class MainActivity : AppCompatActivity() {
     private fun getListSushi(): ArrayList<Sushis> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataPrice = resources.getStringArray(R.array.data_price)
-        val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
+        val dataPhoto = resources.getStringArray(R.array.data_photo)
         val dataDeskripsi = resources.getStringArray(R.array.data_deskripsi)
         val listSushi = ArrayList<Sushis>()
         for (i in dataName.indices) {
-            val sushi = Sushis(dataName[i], dataPrice[i], dataPhoto.getResourceId(i, -1), dataDeskripsi[i])
+            val sushi = Sushis(dataName[i], dataPrice[i], dataPhoto[i], dataDeskripsi[i])
             listSushi.add(sushi)
         }
         return listSushi

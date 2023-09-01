@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import com.aryasurya.sushifushion.databinding.ActivityDetailBinding
+import com.bumptech.glide.Glide
 
 class DetailActivity : AppCompatActivity() {
 
@@ -26,9 +27,12 @@ class DetailActivity : AppCompatActivity() {
         val getDescription = data?.deskripsi
 
         binding.tvDetailSushiName.text = getName
-        if (getPhoto != null) {
-            binding.imgDetailSushi.setImageResource(getPhoto)
-        }
+//        if (getPhoto != null) {
+//            binding.imgDetailSushi.setImageResource(getPhoto)
+//        }
+        Glide.with(this)
+            .load(getPhoto)
+            .into(binding.imgDetailSushi)
         binding.tvPriceDetailSushi.text = getPrice
         binding.btnPayment.text = "Tambah ke keranjang - $getPrice"
         binding.tvDescriptionSushi.text = getDescription
