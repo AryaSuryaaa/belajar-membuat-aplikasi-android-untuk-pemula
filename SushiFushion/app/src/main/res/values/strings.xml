@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">SushiFushion</string>
+    <string name="detail">Detail</string>
+    <string name="sushi_rice">Sushi Rice</string>
+    <string name="original_tea">Original Tea</string>
+    <string name="shoyu">Shoyu</string>
+    <string name="_1">1</string>
+    <string name="tentang_sushi">Tentang Sushi</string>
+    <string name="ganti_saus_sushi">Ganti Saus Sushi</string>
+    <string name="shoyu_sauce">Shoyu Sauce</string>
+    <string name="metsuyu_sauce">Metsuyu Sauce</string>
+    <string name="ponzu_sauce">Ponzu Sauce</string>
+    <string name="katsu_sauce">Katsu Sauce</string>
+    <string name="tambah_topping">Tambah Topping</string>
+    <string name="mango">Mango</string>
+    <string name="cream_cheese">Cream Cheese</string>
+    <string name="tobiko">Tobiko</string>
+    <string name="mayonnaise">Mayonnaise</string>
+    <string name="sesame_seeds">Sesame Seeds</string>
+    <string name="cucumber">Cucumber</string>
+    <string name="catatan_pembelian">Catatan pembelian</string>
 
     <string-array name="data_name">
         <item>Sashimi</item>
@@ -26,5 +45,14 @@
         <item>@drawable/pic5</item>
         <item>@drawable/pic6</item>
         <item>@drawable/pic7</item>
+    </string-array>
+
+    <string-array name="data_deskripsi">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam tellus vel tincidunt suscipit.</item>
+        <item>Sed tincidunt dui in ante convallis, non fringilla nisi iaculis. Fusce ut est at elit scelerisque tristique.</item>
+        <item>Nullam nec justo eu orci rhoncus scelerisque. Ut eget libero nec est vestibulum luctus.</item>
+        <item>Vivamus nec nulla sit amet erat dictum facilisis. Curabitur tincidunt quam in dui cursus, a fermentum sapien ultrices.</item>
+        <item>Phasellus malesuada enim id lorem aliquam venenatis. Sed pellentesque libero non nisl vestibulum, a ultricies justo consequat.</item>
+        <item>Nulla tincidunt orci id augue suscipit, in semper leo bibendum. Aenean et bibendum sapien, at rhoncus velit.</item>
     </string-array>
 </resources>
