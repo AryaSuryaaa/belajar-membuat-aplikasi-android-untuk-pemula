@@ -8,13 +8,7 @@ import com.bumptech.glide.Glide
 
 class ListSushiTodayAdapter(private val listSushiToday: ArrayList<Sushis>): RecyclerView.Adapter<ListSushiTodayAdapter.ListViewHolder>() {
     class ListViewHolder(var binding: SushiTodayItemBinding) : RecyclerView.ViewHolder(binding.root)
-//    {
-//        val imgPhoto: ImageView = itemView.findViewById(R.id.img_sushi_today)
-//        val tvName: TextView = itemView.findViewById(R.id.tv_sushi_today)
-//    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-//        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.sushi_today_item, parent, false)
         val binding = SushiTodayItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ListViewHolder(binding)
     }
@@ -22,9 +16,9 @@ class ListSushiTodayAdapter(private val listSushiToday: ArrayList<Sushis>): Recy
     override fun getItemCount(): Int = listSushiToday.size
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, price ,photo) = listSushiToday[position]
+        val (name, price ,photo, urlPhoto) = listSushiToday[position]
         Glide.with(holder.itemView.context)
-            .load(photo)
+            .load(urlPhoto)
             .into(holder.binding.imgSushiToday)
         holder.binding.tvSushiToday.text = name
     }

@@ -27,9 +27,6 @@ class DetailActivity : AppCompatActivity() {
         val getDescription = data?.deskripsi
 
         binding.tvDetailSushiName.text = getName
-//        if (getPhoto != null) {
-//            binding.imgDetailSushi.setImageResource(getPhoto)
-//        }
         Glide.with(this)
             .load(getPhoto)
             .into(binding.imgDetailSushi)
@@ -48,6 +45,10 @@ class DetailActivity : AppCompatActivity() {
             if(intent.resolveActivity(packageManager) != null) {
                 startActivity(Intent.createChooser(intent, "Bagikan melalui"))
             }
+        }
+
+        binding.imgArrowBack.setOnClickListener {
+            finish()
         }
     }
 

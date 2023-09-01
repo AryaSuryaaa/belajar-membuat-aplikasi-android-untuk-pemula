@@ -20,6 +20,15 @@
     <string name="cucumber">Cucumber</string>
     <string name="catatan_pembelian">Catatan pembelian</string>
     <string name="sushi_fushion">Sushi Fushion</string>
+    <string name="display_description">Description</string>
+    <string name="display_about_me">About Me</string>
+    <string name="display_sosial_media">Sosial Media</string>
+    <string name="my_name">I KADEK ARYA SURYA SAPUTRA</string>
+    <string name="my_future">My Future is Wanna To Be Mobile Development</string>
+    <string name="email">Email</string>
+    <string name="instagram">Instagram</string>
+    <string name="github">Github</string>
+    <string name="linkedin">LinkedIn</string>
 
     <string-array name="data_name">
         <item>Sashimi</item>
@@ -48,13 +57,19 @@
     </string-array>
 
     <string-array name="data_photo">
-<!--        <item>@drawable/pic8</item>-->
-<!--        <item>@drawable/pic3</item>-->
-<!--        <item>@drawable/pic4</item>-->
-<!--        <item>@drawable/pic5</item>-->
-<!--        <item>@drawable/pic6</item>-->
-<!--        <item>@drawable/pic7</item>-->
+        <item>@drawable/pic8</item>
+        <item>@drawable/pic3</item>
+        <item>@drawable/pic4</item>
+        <item>@drawable/pic5</item>
+        <item>@drawable/pic6</item>
+        <item>@drawable/pic7</item>
+        <item>@drawable/pic9</item>
+        <item>@drawable/pic11</item>
+        <item>@drawable/pic12</item>
+        <item>@drawable/pic13</item>
+    </string-array>
 
+    <string-array name="data_url_photo">
         <item>https://lh3.googleusercontent.com/iUXLKrML58KJHRoV6jz8M-TqfnMpo9kwjqc7uxdZtHdKuEzFZViezYHFW-VrH_4pvpVK_O9gYf32hfZRY8yYpG0unZmh7d2qJqv78hNLYTqf_gpxqZdSNRIcEwRWLswr5zjOgXYyNY3VuCGqWFksesQwxBYvZ51WwTQQxICiDw_-LzPqQujoMd9BLaA</item>
         <item>https://lh5.googleusercontent.com/5VQaj4zWVnrACbuTcDr1UchSGwvtTAkaVUaF22sGnjpOtXgYtCRqKQ1PT6s754M4Z8bAVx6PFN4UlYBVfTQaDt9w2VkCrz-qt_01XLaMctLay4rOz7Q96LsWAsFNnOEQP2xTs6fy5bL9BShS6RjIWDwntHBqrggpFIu9Wj5C1I-pNoNdw0J4pJnSKWA</item>
         <item>https://lh4.googleusercontent.com/t2hOmmrbfcVcaVPHcoMA7GNSEZAHqP1S_4NsGoirEp40qccEdwu3QXbBvq-Zj4gqr1bvq9UwQAWqgT3UYg6xzm-CD20vk3YgXiiMLm4JYESIZ-v69rKK64wV2wbWZ6DPXwrmBE8f3Dv9ZWIO_q78hT6nSwX75DKnj3_c7GW0kON-RD5R-zlkH04lvEI</item>
